@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-size:10px; line-height:1.6; margin:0;font-family: Arial, Helvetica, sans-serif;}
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background:#f2f3f7; padding:5px;
+  } 
+th {font-size:10px;}
+table {width:600px;margin:auto;}
+h1 {font-size:16px;color:blue;}
+h2 {font-size:14px;color:red;}
+h3 {font-size: 12px; text-decoration: underline overline; color:black;}
+b {color:blue;}
+
+
+    
+.header {
+  background-color:#BFD7ED;
+  padding: 10px;
+  text-align: center;
+  color:white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333; padding:10px;
+}
+
+#navbar a {
+  color: white;  
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight:bold;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.content { background-color: #7EC8E3;
+  padding: 10px;
+}
+
+a
+{text-decoration:none; color:white; padding-top:10px;
+}
+	
+
+.ads{color:white; padding:20px; text-align:center;background:green;
+margin-top: 10px; margin-bottom: 10px; 
+}
+
+.footer {color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: black;
+    height: 20px;
+}
+
+
+.greenclass {
+    color: green; font-weight: bold; text-align:center;
+  }
+  
+.redclass {
+    color: red;   font-weight: bold; text-align:center;}
+    
+
+
+</style>
+
+
+<script type="text/javascript">
+  function createtable() {
+    const cells = document.getElementsByTagName('td');
+    for (i = 0; i < cells.length; i++) {
+      if (cells[i].innerHTML == "PASS") {
+        cells[i].className += 'greenclass';
+      }
+      if (cells[i].innerHTML == "FAIL") {
+        cells[i].className += 'redclass';
+      }
+    }
+  }
+</script>
+
+
+<script>
+function printPage(id)
+{
+   var html="<html>";
+   html+= document.getElementById(id).innerHTML;
+
+   html+="</html>";
+
+   var printWin = window.open();
+   printWin.document.write(html);
+   printWin.document.close();
+   printWin.focus();
+   printWin.print();
+   printWin.close();
+}
+</script>
+
+
+</head>
+<body>
+
+<div class="header">
+  <h1>NEPALTAR SECONDARY SCHOOL</h1>
+</div>
+
+<div id="navbar" align="center" >
+  <a href="/">RESULT</a>
+  <a href="/">MARKSHEET</a>
+  <a href="/">CONTACT</a>
+</div>
+
+
+<div class="ads"> Advertisement</div>
+
+
+<div id="print">
+<div class="content">
+<table>
+  <tr>
+    <th colspan="7">
+	<h1>NEPALTAR SECONDARY SCHOOL</h1>
+	
+	<h2> FINAL TERM EXAMINATION </h2>
+	
+	<h3>GRADE-SHEET</h3>
+	</th>
+   </tr>
+    
+  <tr>
+<td colspan="7"> THE GRADE(S) SECURED BY . . . . . . . . . . <b>SUJAN SUBEDI </b>. . . . . . . . . . . . . . . .CLASS . . <b>FOUR </b>. . . . . . . . . . . . . . . .ROLL NO. . . <b>32</b>. . . . . . . . . . . . . .. . . . . . DATE OF BIRTH . . . . .. . . . .. . . . . <b>2056-05-27 </b>. . . . . . . . . . . . . . . . . .IN THE FINAL TERM EXAMINATION OF . . . . . .<b>2078 BS </b>. . . . . . . . . . . . . ARE GIVEN BELOW. </td>
+</tr>
+  <tr>
+    <th rowspan="2" width="50%">SUBJECTS</th>
+    <th rowspan="2">CREDIT HOURS</th>
+    <th colspan="2">OBTAINED GRADE</th>
+    <th rowspan="2">FINAL GRADE</th>
+    <th rowspan="2">GRADE POINT</th>
+    <th rowspan="2">REMARKS</th>
+  </tr>
+  <tr> <th> TH</th><th> PR</th></tr>
+  
+  <tr> <td>COMP. ENGLISH</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>COMP. NEPALI</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>COMP. MATHEMATICS</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>COMP. SCIENCE</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>COMP. SOCIAL STUDIES</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>COMP. HEALTH, POP & ENV EDU</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>OPT.I ECONOMICS</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>OPT.II OFFICE MGMT & ACCOUNT</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>. . . . . . </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr> <td>. . . . . . </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  
+  <tr>
+  <th colspan="6"> GRADE POINT AVERAGE (GPA):</th><th>1.6</th>
+  </tr>
+  <tr>
+  <th colspan="6">  RESULT :</th><td>FAIL</td>
+  </tr>
+  <tr><td colspan="5"> 
+1. One Credit Hour equals 32 Clock Hours. <br>
+2. TH : Theory, PR : Practical <br>
+3. *@ : Absent <br>
+*C : Copy Cancelled <br>
+*E : Expelled<br>
+*T : Theory Grade Missing<br>
+*P : Practical Grade Missing<br></td> 
+<td colspan="2"> <img src="https://www.see.gov.np/resources/see/img/logo.png" alt="Logo" width="100%" height="100px"></td></tr>
+<tr><td colspan="7"> Note: This Sheet is for general idea of grade(s) you secured. This is not for official use. If any mistakes appear; record at SEE Board ledger will be referred.</td></tr>
+ 
+<script>
+      createtable();
+</script>
+</table> 
+</div>
+</div>
+<br>
+<div align="center">
+<button type="button" value="" onclick="printPage('print')">Print Marksheet</button> <button onclick="window.print('print')">Print this page</button>
+</div>
+
+<div class="ads"> Advertisement</div>
+<div class="footer"> &copy; All Right Reserved. <a href="https://fb.com/BHL53">Bishnu Lamsal </a></div>
+
+</body>
+</html>
